@@ -21,6 +21,7 @@ BuildRequires:	lzo-devel
 #BuildRequires:	lz4-devel
 BuildRequires:	xz-devel
 #BuildRequires:	libzstd-devel
+BuildRequires:	libtool
 
 %description
 FSArchiver is a system tool that allows you to save the contents of a
@@ -35,6 +36,7 @@ just lose the current file, not the whole archive.
 %setup -q -n %{name}-%{version}/fsarchiver
 
 %build
+./autogen.sh
 %configure --disable-lz4 --disable-lzo --disable-zstd
 make %{?_smp_mflags}
 
