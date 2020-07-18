@@ -1,0 +1,3 @@
+[submodule "fsarchiver"]
+	path = fsarchiver
+	url = https://github.com/fdupoux/fsarchiver.git
