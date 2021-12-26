@@ -32,6 +32,11 @@ filesystem when it extracts the data to devices. Everything is checksummed
 in the archive in order to protect the data. If the archive is corrupt, you
 just lose the current file, not the whole archive.
 
+PackageName: FSArchiver
+Type: console-application
+Custom:
+  Repo: https://github.com/sailfishos-chum/fsarchiver
+
 %prep
 %setup -q -n %{name}-%{version}/fsarchiver
 
