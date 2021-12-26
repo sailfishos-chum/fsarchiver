@@ -36,6 +36,8 @@ PackageName: FSArchiver
 Type: console-application
 Custom:
   Repo: https://github.com/sailfishos-chum/fsarchiver
+Categories:
+  - System
 
 %prep
 %setup -q -n %{name}-%{version}/fsarchiver
